@@ -13,6 +13,7 @@
 --
 --
 DROP DATABASE db_sst;
+--
 CREATE DATABASE db_sst
     WITH OWNER = postgres
     ENCODING = 'UTF8'
