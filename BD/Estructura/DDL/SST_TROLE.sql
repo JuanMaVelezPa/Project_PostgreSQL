@@ -17,9 +17,15 @@ DROP TABLE IF EXISTS SST_TROLE;
 CREATE TABLE SST_TROLE(
                      ROLE_ROLE             INTEGER        NOT NULL    CHECK(ROLE_ROLE > 0)
                   ,  ROLE_NOMB             VARCHAR        NOT NULL
+                  ,  ROLE_ACTI             BOOLEAN        NOT NULL DEFAULT TRUE 
+                  ,  ROLE_USER             VARCHAR        NOT NULL  DEFAULT USER
+                  ,  ROLE_FECCRE           DATE           NOT NULL  DEFAULT CURRENT_DATE
                   ,  PRIMARY KEY(ROLE_ROLE)
                 );
 
 COMMENT ON TABLE  SST_TROLE              IS 'ROLES';
 COMMENT ON COLUMN SST_TROLE.ROLE_ROLE    IS 'Id. Roles';
 COMMENT ON COLUMN SST_TROLE.ROLE_NOMB    IS 'Nombre de los Roles';
+COMMENT ON COLUMN SST_TROLE.ROLE_ACTI    IS 'Activo';
+COMMENT ON COLUMN SST_TROLE.ROLE_USER    IS 'Usuario.';
+COMMENT ON COLUMN SST_TROLE.ROLE_FECCRE  IS 'Fecha de creacion.';

@@ -12,7 +12,7 @@
 --
 --
 --
-DROP TABLE IF EXISTS SST_TENCA;
+DROP TABLE SST_TENCA;
 --
 CREATE TABLE SST_TENCA(
                   ENCA_ENCA           INTEGER         NOT NULL
@@ -24,6 +24,8 @@ CREATE TABLE SST_TENCA(
                 , ENCA_CERT50H        VARCHAR         NOT NULL
                 , ENCA_CERT20H        VARCHAR         NOT NULL
                 , ENCA_CERTSAL        VARCHAR         NOT NULL
+                , ENCA_USER           VARCHAR         NOT NULL  DEFAULT USER
+                , ENCA_FECCRE         DATE            NOT NULL  DEFAULT CURRENT_DATE
                 , PRIMARY KEY(ENCA_ENCA)
             );
 
@@ -37,3 +39,5 @@ COMMENT ON COLUMN SST_TENCA.ENCA_RTDP    IS 'Ruta diploma del encargado.';
 COMMENT ON COLUMN SST_TENCA.ENCA_CERT50H IS 'Ruta cert. de 50 hras del encargado.';
 COMMENT ON COLUMN SST_TENCA.ENCA_CERT20H IS 'Ruta cert. de 20 hras del encargado.';
 COMMENT ON COLUMN SST_TENCA.ENCA_CERTSAL IS 'Ruta cert. de salud del encargado.';
+COMMENT ON COLUMN SST_TENCA.ENCA_USER    IS 'Usuario.';
+COMMENT ON COLUMN SST_TENCA.ENCA_FECCRE  IS 'Fecha de creacion.';

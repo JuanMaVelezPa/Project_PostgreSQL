@@ -18,6 +18,8 @@ CREATE TABLE SST_TPERM(
                       PERM_ROLE             INTEGER         NOT NULL
                     , PERM_MODU             INTEGER         NOT NULL
                     , PERM_NOMB             VARCHAR         NOT NULL
+                    , PERM_USER             VARCHAR         NOT NULL  DEFAULT USER
+                    , PERM_FECCRE           DATE            NOT NULL  DEFAULT CURRENT_DATE
                     , PRIMARY KEY(PERM_ROLE, PERM_MODU)
                     , FOREIGN KEY(PERM_ROLE) REFERENCES SST_TROLE(ROLE_ROLE)
                     , FOREIGN KEY(PERM_MODU) REFERENCES SST_TMODU(MODU_MODU)
@@ -27,3 +29,5 @@ COMMENT ON TABLE  SST_TPERM              IS 'Permisos';
 COMMENT ON COLUMN SST_TPERM.PERM_ROLE    IS 'Id. Rol';
 COMMENT ON COLUMN SST_TPERM.PERM_MODU    IS 'Id. Modulo';
 COMMENT ON COLUMN SST_TPERM.PERM_NOMB    IS 'Nombre de Permiso';
+COMMENT ON COLUMN SST_TPERM.PERM_USER    IS 'Usuario.';
+COMMENT ON COLUMN SST_TPERM.PERM_FECCRE  IS 'Fecha de creacion.';

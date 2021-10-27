@@ -24,6 +24,8 @@ CREATE TABLE SST_TUSUA(
                     , USUA_CORR           VARCHAR         NOT NULL
                     , USUA_INAD           BOOLEAN         NOT NULL
                     , USUA_ROLE           INTEGER         NOT NULL
+                    , USUA_USER           VARCHAR         NOT NULL  DEFAULT USER
+                    , USUA_FECCRE         DATE            NOT NULL  DEFAULT CURRENT_DATE
                     , PRIMARY KEY(USUA_USUA)
                     , FOREIGN KEY(USUA_ROLE) REFERENCES SST_TROLE(ROLE_ROLE)
                 );
@@ -38,3 +40,5 @@ COMMENT ON COLUMN SST_TUSUA.USUA_DIRE    IS 'Dirección del usuario';
 COMMENT ON COLUMN SST_TUSUA.USUA_CORR    IS 'Correo electrónico para recuperación de la clave';
 COMMENT ON COLUMN SST_TUSUA.USUA_INAD    IS 'Indicador de si es o no, administtrador el usuario. TRUE=Admin / FALSE=Mo lo es';
 COMMENT ON COLUMN SST_TUSUA.USUA_ROLE    IS 'Rol del usuario en el sistema, asignado al momento de crear un usuario';
+COMMENT ON COLUMN SST_TUSUA.USUA_USER    IS 'Usuario.';
+COMMENT ON COLUMN SST_TUSUA.USUA_FECCRE  IS 'Fecha de creacion.';
