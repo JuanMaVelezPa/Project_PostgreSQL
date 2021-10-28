@@ -41,6 +41,8 @@ DROP TABLE SST_TEMRO;
 DROP TABLE SST_TDEMP;
 DROP TABLE SST_TEMRO;
 DROP TABLE SST_TDCIA;
+DROP TABLE SST_TPROT;
+DROP TABLE SST_TCAPR;
 
 -- CREATE TABLES
 \i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/DDL/SST_TENCA.sql;
@@ -63,10 +65,12 @@ DROP TABLE SST_TDCIA;
 \i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/DDL/SST_TDEMP.sql;
 \i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/DDL/SST_TEMRO.sql;
 \i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/DDL/SST_TDCIA.sql;
+\i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/DDL/SST_TPROT.sql;
+\i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/DDL/SST_TCAPR.sql;
 --
 
-
-
+-- CREATE VIEWS
+\i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/DDL/SST_VPROT.sql;
 
 
 -- DATOS
