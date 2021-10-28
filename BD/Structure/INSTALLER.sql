@@ -7,26 +7,35 @@
 --
 -- VERSION      DATE        DEVELOPER           OBSERVATION
 -- ============ =========== ==================  ===================================================================
--- 1000         26/10/2021  Juan Manuel Velez   Instalador
+-- 1000         26/10/2021  Juan Manuel Velez   Instalador de Proyecto
 -- ============ =========== ==================  ===================================================================
 --
 --
 --
 -- \i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/INSTALLER.sql;
-
+--
 -- DB
+\echo ========================================================================================
+\echo ========================================== DB ==========================================
+\echo DDL.sql
 \i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/DDL/DDL.sql;
-
+\echo ========================================================================================
+--
 -- Select db_sst
+\echo ========================================================================================
+\echo ========================================== DB ==========================================
+\echo db_sst
 \c db_sst;
-
+\echo ========================================================================================
+--
 -- DROP TABLES
+\echo ========================================================================================
+\echo ======================================== TABLES ========================================
 DROP TABLE SST_TPERM;
 DROP TABLE SST_TUSUA;
 DROP TABLE SST_TROLE;
 DROP TABLE SST_TMODU;
 DROP TABLE SST_TENCA;
---
 DROP TABLE SST_TCIAS;
 DROP TABLE SST_TPROV;
 DROP TABLE SST_TPROD;
@@ -43,14 +52,14 @@ DROP TABLE SST_TEMRO;
 DROP TABLE SST_TDCIA;
 DROP TABLE SST_TPROT;
 DROP TABLE SST_TCAPR;
-
+\echo ========================================================================================
+--
 -- CREATE TABLES
 \i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/DDL/SST_TENCA.sql;
 \i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/DDL/SST_TMODU.sql;
 \i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/DDL/SST_TROLE.sql;
 \i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/DDL/SST_TUSUA.sql;
 \i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/DDL/SST_TPERM.sql;
---
 \i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/DDL/SST_TCIAS.sql;
 \i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/DDL/SST_TPROV.sql;
 \i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/DDL/SST_TPROD.sql;
@@ -68,12 +77,12 @@ DROP TABLE SST_TCAPR;
 \i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/DDL/SST_TPROT.sql;
 \i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/DDL/SST_TCAPR.sql;
 --
-
 -- CREATE VIEWS
 \i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/DDL/SST_VPROT.sql;
-
-
+--
 -- DATOS
 \i C:/Users/PERSONAL/Desktop/JuanMa/PostgreSQL/Project_PostgreSQL/BD/Estructura/DML/Datos.sql;
-
+--
+ \echo ECHO-----------------COMMIT
 COMMIT;
+--
