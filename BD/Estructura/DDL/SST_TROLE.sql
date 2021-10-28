@@ -19,7 +19,7 @@ CREATE TABLE SST_TROLE(
                   ,  ROLE_NOMB             VARCHAR        NOT NULL
                   ,  ROLE_ACTI             BOOLEAN        NOT NULL DEFAULT TRUE 
                   ,  ROLE_USER             VARCHAR        NOT NULL  DEFAULT USER
-                  ,  ROLE_FECCRE           DATE           NOT NULL  DEFAULT CURRENT_DATE
+                  ,  ROLE_FECCRE           TIMESTAMP      NOT NULL  DEFAULT CURRENT_TIMESTAMP
                   ,  PRIMARY KEY(ROLE_ROLE)
                 );
 

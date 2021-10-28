@@ -25,7 +25,7 @@ CREATE TABLE SST_TUSUA(
                     , USUA_INAD           BOOLEAN         NOT NULL
                     , USUA_ROLE           INTEGER         NOT NULL
                     , USUA_USER           VARCHAR         NOT NULL  DEFAULT USER
-                    , USUA_FECCRE         DATE            NOT NULL  DEFAULT CURRENT_DATE
+                    , USUA_FECCRE         TIMESTAMP       NOT NULL  DEFAULT CURRENT_TIMESTAMP
                     , PRIMARY KEY(USUA_USUA)
                     , FOREIGN KEY(USUA_ROLE) REFERENCES SST_TROLE(ROLE_ROLE)
                 );
