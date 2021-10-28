@@ -6,3 +6,9 @@ Project with PostgreSQL with Universidad de Sabaneta - Sapiencia
 2. Adriana Marcela Zapata
 3. Sandra Zuleta C.
 4. Maria Lili R.
+
+# BD
+1. Data
+2. Diagram
+3. Structure
+4. University Instructions
