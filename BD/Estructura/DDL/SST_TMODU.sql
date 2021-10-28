@@ -18,7 +18,7 @@ CREATE TABLE SST_TMODU(
                       MODU_MODU           INTEGER         NOT NULL  CHECK(MODU_MODU > 0)
                     , MODU_NOMB           VARCHAR         NOT NULL
                     , MODU_USER           VARCHAR         NOT NULL  DEFAULT USER
-                    , MODU_FECCRE         DATE            NOT NULL  DEFAULT CURRENT_DATE
+                    , MODU_FECCRE         TIMESTAMP       NOT NULL  DEFAULT CURRENT_TIMESTAMP
                     , PRIMARY KEY(MODU_MODU)
                 );
 

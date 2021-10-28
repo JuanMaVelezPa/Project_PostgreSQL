@@ -19,7 +19,7 @@ CREATE TABLE SST_TPERM(
                     , PERM_MODU             INTEGER         NOT NULL
                     , PERM_NOMB             VARCHAR         NOT NULL
                     , PERM_USER             VARCHAR         NOT NULL  DEFAULT USER
-                    , PERM_FECCRE           DATE            NOT NULL  DEFAULT CURRENT_DATE
+                    , PERM_FECCRE           TIMESTAMP       NOT NULL  DEFAULT CURRENT_TIMESTAMP
                     , PRIMARY KEY(PERM_ROLE, PERM_MODU)
                     , FOREIGN KEY(PERM_ROLE) REFERENCES SST_TROLE(ROLE_ROLE)
                     , FOREIGN KEY(PERM_MODU) REFERENCES SST_TMODU(MODU_MODU)

@@ -25,7 +25,7 @@ CREATE TABLE SST_TENCA(
                 , ENCA_CERT20H        VARCHAR         NOT NULL
                 , ENCA_CERTSAL        VARCHAR         NOT NULL
                 , ENCA_USER           VARCHAR         NOT NULL  DEFAULT USER
-                , ENCA_FECCRE         DATE            NOT NULL  DEFAULT CURRENT_DATE
+                , ENCA_FECCRE         TIMESTAMP       NOT NULL  DEFAULT CURRENT_TIMESTAMP
                 , PRIMARY KEY(ENCA_ENCA)
             );
 
